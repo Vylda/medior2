@@ -17,14 +17,14 @@ Test pro mediora na Next.js
     - je třeba, aby byl markdown text generován správně (tj. ve výsledném kódu budou jen značky `<h2>`, `<span>` a `<p>`)
 - vytvořte komponentu `UserList` která bude zobrazovat seznam uživatelů na hlavní stránce
   - seznam bude SSR
-  - seznam uživatelů bude načtený z API `usersUrl` (viz. `/next.config.js` a `/src/utils/config.ts`)
+  - seznam uživatelů bude načtený z `usersUrl` (viz. `/.env*` a `/src/utils/config.ts`)
   - vzhled seznamu podle `/taskImages/userList.png`.
   - kliknutí na odkaz *Show on map* povede na Mapy.cz, kde se podle GPS souřadnic zobrazí pozice uživatele (např. `https://mapy.cz/turisticka?source=coor&id=15.424045866210946%2C50.18830352887631&x=15.4280048&y=50.1874036&z=16`)
   - Kliknutí na tlačítko *Read articles* povede na stránku `/articles/[userId]`, kde bude seznam článků
 - vytvořte komponentu `ArticleList` která bude zobrazovat seznam článků konkrétního uživatele na stránce `/articles/[userId]`
   - seznam bude SSR
-  - seznam článků bude načtený z API `articlesUrl` (viz. `/next.config.js` a `/src/utils/config.ts`)
-  - jméno autora může být načteno z API `userUrl` (viz. `/next.config.js` a `/src/utils/config.ts`) a to v případě, že se na stránku přistoupí přímo (např. `/articles/1`). Pokud se půjde přes hlavní stránku, tak se jméno autora načte z kontextu (*React.createContext*).
+  - seznam článků bude načtený z `articlesUrl` (viz. `/.env*` a `/src/utils/config.ts`)
+  - jméno autora může být načteno z `userUrl` (viz. `/.env*` a `/src/utils/config.ts`) a to v případě, že se na stránku přistoupí přímo (např. `/articles/1`). Pokud se půjde přes hlavní stránku, tak se jméno autora načte z kontextu (*React.createContext*).
   - vzhled seznamu podle `/taskImages/articlesList.png`.
 - funkční aplikaci nahrejte na svůj GitHub / Gitlab a do **sedmi dnů od obdržení zadání** pošlete odkaz na repozitář na e-mail <vilem.lipold@studentagency.cz>
 - v případě problémů a dotazů volejte na +420 606 753 180 (8.00 – 21.00).
@@ -74,7 +74,7 @@ npm run ts
 ```
 
 ### Endpoints
-saved in `.env` files.
+saved in `.env` files as `NEXT_PUBLIC_*` variables.
 
 You can use it in your code like this:
 

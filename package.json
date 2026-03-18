@@ -2,6 +2,9 @@
   "name": "studentagency",
   "version": "0.1.0",
   "private": true,
+  "imports": {
+    "#styles": "./src/styles/index.css"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -14,35 +17,38 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "markdown-to-jsx": "^7.7.6",
-    "next": "^15.3.2",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "markdown-to-jsx": "^9.7.9",
+    "next": "^16.1.7",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "react-use": "^17.6.0"
   },
   "engines": {
     "npm": ">=10.8.2",
     "node": ">=20.18.2"
   },
+  "volta": {
+    "node": "20.18.2",
+    "npm": "10.8.2"
+  },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/postcss": "^4.1.13",
     "@types/babel__core": "^7.20.5",
-    "@types/react": "^19.1.4",
-    "@types/react-dom": "^19.1.5",
-    "autoprefixer": "^10.4.21",
-    "concurrently": "^9.1.2",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.4",
     "eslint-config-studentagency-next-typescript": "^1.5.2",
+    "eslint-config-vylda-next": "^2.2.1",
+    "eslint-import-resolver-typescript": "^4.4.4",
     "husky": "^9.1.7",
-    "postcss": "^8.5.3",
-    "postcss-import": "^16.1.0",
-    "postcss-simple-vars": "^7.0.1",
-    "sass": "^1.89.0",
-    "storybook": "^8.6.14",
-    "storybook-addon-sass-postcss": "^0.3.2",
-    "stylelint": "^16.19.1",
-    "stylelint-config-standard-scss": "^14.0.0",
-    "tailwindcss": "^3.4.17",
+    "postcss": "^8.5.8",
+    "stylelint": "^17.4.0",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "tailwindcss": "^4.1.13",
     "tsconfig-paths-webpack-plugin": "^4.2.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   }
 }

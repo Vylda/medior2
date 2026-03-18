@@ -1,16 +1,16 @@
-import { ReactElement } from 'react';
-import { Metadata } from 'next';
-import '@/styles/index.scss';
+import type { ReactElement, ReactNode } from 'react';
+import type { Metadata } from 'next';
+import '@/styles/index.css';
 
 interface IProps {
-  children: ReactElement
+  readonly children: ReactNode;
 }
 
 export const metadata: Metadata = {
-  title: 'Medior Page',
   icons: {
     icon: '/favicons/favicon.svg',
   },
+  title: 'Medior Page',
 };
 
 const RootLayout = ({
