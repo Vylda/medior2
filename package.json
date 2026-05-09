@@ -1,6 +1,6 @@
 {
   "name": "studentagency",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "imports": {
     "#styles": "./src/styles/index.css"
